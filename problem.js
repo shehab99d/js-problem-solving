@@ -47,4 +47,17 @@ function removeDuplicates(str) {
     return str.filter((item, index) => str.indexOf(item) === index);
 };
 
-console.log(removeDuplicates([1, 2, 2, 3, 3, 4, 5, 6, 6, 7, 8, 8, 9, 9, 9, 9]));
+// console.log(removeDuplicates([1, 2, 2, 3, 3, 4, 5, 6, 6, 7, 8, 8, 9, 9, 9, 9]));
+
+
+// Problem 6: Sum of All Numbers in an Array
+
+function sumArray(str) {
+    let sum = 0;
+    for (let i = 0; i < str.length; i++) {
+        sum += str[i];
+    };
+    return sum;
+};
+
+console.log(sumArray([1, 4, 6, 9]));
