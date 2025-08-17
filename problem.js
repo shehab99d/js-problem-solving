@@ -38,4 +38,13 @@ function maxNumber(str) {
     }, str[0]);
 };
 
-console.log(maxNumber([2, 4, 6, 34, 55, 3]));
+// console.log(maxNumber([2, 4, 6, 34, 55, 3]));
+
+
+// Problem 5: Remove Duplicates from an Array
+
+function removeDuplicates(str) {
+    return str.filter((item, index) => str.indexOf(item) === index);
+};
+
+console.log(removeDuplicates([1, 2, 2, 3, 3, 4, 5, 6, 6, 7, 8, 8, 9, 9, 9, 9]));
