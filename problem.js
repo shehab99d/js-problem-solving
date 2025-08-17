@@ -22,7 +22,20 @@ function palindrome(str) {
     return str === str.split("").reverse().join("");
 };
 
-console.log(palindrome("bab"));
+// console.log(palindrome("bab"));
 
 
 
+// Problem 4: Find the Maximum Number
+
+function maxNumber(str) {
+    return str.reduce((max, num) => {
+        if (num > max) {
+            return num;
+        } else {
+            return max
+        }
+    }, str[0]);
+};
+
+console.log(maxNumber([2, 4, 6, 34, 55, 3]));
