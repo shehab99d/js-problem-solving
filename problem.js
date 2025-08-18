@@ -60,4 +60,22 @@ function sumArray(str) {
     return sum;
 };
 
-console.log(sumArray([1, 4, 6, 9]));
+// console.log(sumArray([1, 4, 6, 9]));
+
+
+// Problem 7: Find even number 
+
+function findEvenNumber(str) {
+    let even = [];
+
+    for (let i = 0; i < str.length; i++) {
+        let currentNumber = str[i];
+
+        if (currentNumber % 2 == 0) {
+            even.push(currentNumber);
+        };
+    };
+    return even
+};
+
+console.log(findEvenNumber([2, 4, 3, 5, 6, 5]));
