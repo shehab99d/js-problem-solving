@@ -78,4 +78,32 @@ function findEvenNumber(str) {
     return even
 };
 
-console.log(findEvenNumber([2, 4, 3, 5, 6, 5]));
+// console.log(findEvenNumber([2, 4, 3, 5, 6, 5]));
+
+
+// Problem 8: capitalizeWords 
+
+function capitalizeWords(str) {
+    return str.split(" ")
+        .map(word => word
+            .charAt(0)
+            .toUpperCase() + word.slice(1)).join(" ")
+};
+
+// console.log(capitalizeWords("hello world"));
+
+
+// Problem 9: Find the Factorial of a Number
+
+
+function factorial(str) {
+    let result = 1;
+
+    for (let i = 1; i <= str; i++){
+        result *= i;
+    };
+    return result;
+};
+
+console.log(factorial(5));
+
