@@ -95,7 +95,6 @@ function capitalizeWords(str) {
 
 // Problem 9: Find the Factorial of a Number
 
-
 function factorial(str) {
     let result = 1;
 
